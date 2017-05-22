@@ -1,6 +1,6 @@
 {
   "name": "app-core",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "boilerplate for building an npm package with next-gen javascript transpilation through babel and tree-shaking compilation through webpack",
   "main": "./dist/main.js",
   "scripts": {
