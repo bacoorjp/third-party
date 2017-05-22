@@ -1,3 +1,7 @@
-export { ROLE } from './lib/constants'
+import ROLE from './constants'
 
-console.log(ROLE.SPONSEE);
+const appCore = {
+  ROLE
+}
+
+export default appCore

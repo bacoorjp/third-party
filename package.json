@@ -1,18 +1,12 @@
 {
   "name": "app-core",
-  "version": "0.0.2",
-  "description": "boilerplate for building an npm package with next-gen javascript transpilation through babel and tree-shaking compilation through webpack",
-  "main": "./dist/main.js",
+  "version": "0.0.4",
+  "description": "App core for realboost",
+  "main": "./lib/main.js",
   "scripts": {
-    "build": "cross-env NODE_ENV=PROD webpack --progress --colors",
-    "build:watch": "cross-env NODE_ENV=DEV webpack --progress --colors --watch --growl",
-    "test": "cross-env NODE_ENV=TEST mocha-webpack",
-    "test:watch": "cross-env NODE_ENV=TEST mocha-webpack --watch --growl",
+    "build": "rimraf lib && babel src --out-dir lib",
     "prestart": "npm run build",
-    "prepublish": "npm run build",
-    "start": "node ./bin/main",
-    "style": "standard",
-    "fmt": "standard --fix"
+    "prepublish": "npm run build"
   },
   "repository": {
     "type": "git",
@@ -31,27 +25,18 @@
     "publishing",
     "boilerplate"
   ],
-  "author": "Son DInh",
-  "license": "ISC",
-  "homepage": "https://github.com/resisttheurge/babel-webpack-package-boilerplate#readme",
+  "author": "Son Dinh",
+  "license": "MIT",
   "devDependencies": {
-    "babel-core": "^6.22.1",
-    "babel-eslint": "^7.1.1",
-    "babel-loader": "^6.2.10",
-    "babel-polyfill": "^6.22.0",
-    "babel-preset-env": "^1.1.8",
-    "babel-preset-stage-0": "^6.22.0",
-    "bind-infix-proxy": "^1.0.0",
-    "cross-env": "^3.1.4",
-    "jsverify": "^0.7.4",
-    "mocha": "^3.2.0",
-    "mocha-webpack": "^0.7.0",
-    "source-map-support": "^0.4.11",
-    "standard": "^8.6.0",
-    "webpack": "^2.2.1"
+    "babel": "^6.23.0",
+    "babel-cli": "^6.24.1",
+    "chai": "^3.4.1",
+    "mocha": "^2.3.4",
+    "rimraf": "^2.4.4",
+    "sinon": "^1.17.2"
   },
   "dependencies": {
     "babel-preset-es2015": "^6.24.1",
-    "webpack-node-externals": "^1.6.0"
+    "global": "^4.3.2"
   }
 }
