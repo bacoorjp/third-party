@@ -1,6 +1,6 @@
 {
   "name": "third-party",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Third party for HB",
   "main": "./lib/main.js",
   "scripts": {
@@ -54,6 +54,7 @@
     "iban": "0.0.5",
     "js-scrypt": "0.2.0",
     "node-zip": "1.1.1",
+    "object-hash": "^1.1.8",
     "qr-image": "3.1.0",
     "sanitize-html": "1.12.0",
     "third-party": "^0.0.1",
