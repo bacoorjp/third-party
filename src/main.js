@@ -29,10 +29,30 @@ import web3 from 'web3';
 
 import zip from 'node-zip';
 import sanitizeHtml from 'sanitize-html';
+
+const ethereum = {
+  tx
+}
 const thirdParty = {
   bs58check,
   elliptic,
-  CryptoJS
+  CryptoJS,
+  bip39,
+  bip69,
+  bitcoin,
+  createHmac,
+  ecurve,
+  Buffer,
+  Decimal,
+  qrImage,
+  bigi,
+  ethereum,
+  objectHash,
+  scrypt,
+  iban,
+  web3,
+  zip,
+  sanitizeHtml
 }
 
 export default thirdParty
