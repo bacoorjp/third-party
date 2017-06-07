@@ -1,6 +1,6 @@
 {
   "name": "third-party",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Third party for HB",
   "main": "./lib/main.js",
   "scripts": {
