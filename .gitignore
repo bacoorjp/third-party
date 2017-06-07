@@ -11,6 +11,8 @@ yarn.lock
 
 ## Node JS
 
+lib
+
 # Logs
 logs
 *.log
